@@ -1,0 +1,242 @@
+@charset "ISO-8859-1";
+
+/* BOOSTRAP OVERRIDE */
+.btn-outline-light:hover{
+    color:#0d6efd !important;
+}
+
+
+
+
+/* GENERAL */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+
+
+/* HOMEPAGE */
+#homepage h1:not(#heading h1){
+    font-size: 55px;
+}
+
+#homepage #heading{
+    height: 87vh;
+}
+
+#homepage #heading h2{
+    letter-spacing: 5px;
+    font-size:25px;
+}
+
+#homepage #heading h1{
+    font-size:60px;
+    line-height: 60px;
+}
+
+#homepage #collection{
+    padding-top: 70px;
+}
+
+#homepage #collection p{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#homepage #reviews{
+    padding-top: 150px;
+    padding-bottom: 70px;
+}
+
+#homepage #reviews .review-card img{
+    width: 70px;
+}
+
+#homepage #reviews .review-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#homepage #reviews .review-card i{
+    font-size: 23px;
+    color: #0d6efd;
+}
+
+#homepage #contact h1{
+    font-size: 70px;
+}
+
+/* merci miha sur Codepen https://codepen.io/mihacreanest/pen/QxKVZQ */
+#slider>[type=radio] {
+    display: none;
+}
+
+#slider::before {
+    clear: both;
+}
+
+#slider {
+    height: 400px;
+    width: 400px;
+    margin-bottom: 20px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#slider label {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    display: block;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+#s1:checked~#slide4, #s2:checked~#slide5, #s3:checked~#slide1, #s4:checked~#slide2, #s5:checked~#slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(-30%, 0, -200px);
+}
+
+#s1:checked~#slide5, #s2:checked~#slide1, #s3:checked~#slide2, #s4:checked~#slide3, #s5:checked~#slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(-15%, 0, -100px);
+}
+
+#s1:checked~#slide1, #s2:checked~#slide2, #s3:checked~#slide3, #s4:checked~#slide4, #s5:checked~#slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+    transform: translate3d(0, 0, 0);
+}
+
+#s1:checked~#slide2, #s2:checked~#slide3, #s3:checked~#slide4, #s4:checked~#slide5, #s5:checked~#slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(15%, 0, -100px);
+}
+
+#s1:checked~#slide3, #s2:checked~#slide4, #s3:checked~#slide5, #s4:checked~#slide1, #s5:checked~#slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(30%, 0, -200px);
+}
+
+#slide1 {
+    background: url(../assets/evoli-figurine.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#slide2 {
+    background: url(../assets/pokemon-25ans.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#slide3 {
+    background: url(../assets/pokemon-booster.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#slide4 {
+    background: url(../assets/pokemon-coffret.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#slide5 {
+    background: url(../assets/pokemon-unite.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#slides>a {
+    margin: 0px auto;
+    width: 300px;
+    display: block;
+}
+
+.addressInLabel {
+    height: 80%;
+    margin: 8% 10% 10% 10%;
+    text-align: left;
+}
+
+.addressInLabel a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50%;
+    text-indent: -9999px;
+    /* encore le trix pour cacher le texte */
+}
+
+
+
+
+/* PRODUCTS */
+#products section{
+	padding: 70px 0px;
+}
+
+#products img{
+	max-height:300px;
+}
+
+#products h1{
+	font-size: 60px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+#products h4{
+	font-size: 28px;
+}
+
+
+
+
+
+/* SINGLE PRODUCT */
+#product-shop{
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+
+#product-shop h1{
+    font-size: 60px;
+    line-height: 53px;
+}
+
+
+
+
+/* ERROR PAGES */
+.wrapper{
+	height: 80vh !important;
+	padding-top: 20vh;
+}
+
+
+
+
+/* FOOTER */
+footer p{
+    font-size: 22px;
+}
+
+
+
